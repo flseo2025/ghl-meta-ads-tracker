@@ -1,0 +1,14 @@
+{
+  "name": "ghl-meta-ads-tracker",
+  "owner": {
+    "name": "GHL Meta Ads Stat Tracker"
+  },
+  "description": "The GHL Meta Ads Stat Tracker plugin for Claude Code.",
+  "plugins": [
+    {
+      "name": "ghl-meta-ads-tracker",
+      "source": "./claude",
+      "description": "Fills your weekly Meta ads stat tracker in Google Sheets from your own GoHighLevel account."
+    }
+  ]
+}

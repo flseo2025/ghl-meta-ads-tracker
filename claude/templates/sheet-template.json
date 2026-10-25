@@ -1,0 +1,193 @@
+{
+  "tabTitle": "Stat Tracker",
+  "about": "Row 1 headers, row 2 targets, rows 3-4 sample rows, real data from row 5. Columns A to AA.",
+  "headers": [
+    "Date Range",
+    "Campaign Name)",
+    "Ad Set Name (Target/Placements)",
+    "Ad Copy/Image Description",
+    "Ad platform? (FB, IG influencer, YouTube ads etc)",
+    "# of Unique Page Views",
+    "Total Spent",
+    "Cost Per Lead",
+    "# of Optins",
+    "Optin Rate",
+    "# of Applications",
+    "Application Rate",
+    "Cost Per Application",
+    "Number of Booked Calls",
+    "# of Calls Attended",
+    "Cost Per Conversation",
+    "Booked Call Show Up Rate",
+    "Is the prospect within your target market and not financially destitute?",
+    "Closed",
+    "Close Rate",
+    "Cost Per Acquisition",
+    "SOG $ Collected",
+    "Upfront $ from MLM Company",
+    "Total $$$ Collected",
+    "Profit Per Acquisition",
+    "ROAS",
+    "Notes"
+  ],
+  "targets": {
+    "G": "If $50 spent and no leads: Turn Off (Even if CTR looks good)",
+    "H": "Varies - between $3 - $25 If raises above $25 and is trending upwards within 24/48 hours: Turn Off",
+    "J": "20% +",
+    "L": "Varies - 3% to 10%+",
+    "M": "Varies - $30 - $300 If raises above $300 and is trending up within 24/48 hours: Turn Off",
+    "N": "Varies 55%-80%",
+    "P": "Below $150 : If CPC raises above $150 and continues trending upwards in 24/48 hours: Turn Ad Off",
+    "Q": "50-70%",
+    "R": "Y/N",
+    "T": "Varies - 10% - 30%",
+    "U": "Varies",
+    "V": "Varies",
+    "W": "Varies",
+    "X": "Varies",
+    "Y": "Breakeven +",
+    "Z": "Breakeven +. 2X plus ROI is the goal but anything above breakeven is good!",
+    "AA": "CTR (from Ads Manager): Aim for 0.75%+ (If main KPIs are within range but CTR is lower than 0.75%, do not turn ad off)"
+  },
+  "inputColumns": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "I",
+    "K",
+    "N",
+    "O",
+    "R",
+    "S",
+    "V",
+    "W",
+    "AA"
+  ],
+  "formulas": {
+    "H": "=IFERROR(G{r}/I{r},\"\")",
+    "J": "=IFERROR(I{r}/F{r},\"\")",
+    "L": "=IFERROR(K{r}/I{r},\"\")",
+    "M": "=IFERROR(G{r}/K{r},\"\")",
+    "P": "=IFERROR(G{r}/O{r},\"\")",
+    "Q": "=IFERROR(O{r}/N{r},\"\")",
+    "T": "=IFERROR(S{r}/O{r},\"\")",
+    "U": "=IFERROR(G{r}/S{r},\"\")",
+    "X": "=V{r}+W{r}",
+    "Y": "=X{r}-G{r}",
+    "Z": "=IFERROR(X{r}/G{r},\"\")"
+  },
+  "samples": [
+    {
+      "A": "2/3 - 2/9",
+      "B": "TEST",
+      "C": "TEST",
+      "D": "TEST",
+      "E": "FB",
+      "F": 200,
+      "G": 500,
+      "I": 50,
+      "K": 5,
+      "N": 4,
+      "O": 3,
+      "S": 1,
+      "V": 1997,
+      "W": 49
+    },
+    {
+      "A": "2/3 - 2/9",
+      "B": "TEST",
+      "C": "TEST",
+      "D": "TEST",
+      "E": "FB",
+      "F": 560,
+      "G": 1400,
+      "I": 140,
+      "K": 14,
+      "N": 11,
+      "O": 8,
+      "S": 2,
+      "V": 3994,
+      "W": 98
+    }
+  ],
+  "numberFormats": {
+    "currency": {
+      "pattern": "\"$\"#,##0.00",
+      "columns": [
+        "G",
+        "H",
+        "M",
+        "P",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y"
+      ]
+    },
+    "percent": {
+      "pattern": "0.00%",
+      "columns": [
+        "J",
+        "L",
+        "Q",
+        "T"
+      ]
+    },
+    "ratio": {
+      "pattern": "0.00",
+      "columns": [
+        "Z"
+      ]
+    }
+  },
+  "style": {
+    "headerInputColor": {
+      "red": 0.945,
+      "green": 0.761,
+      "blue": 0.196
+    },
+    "headerFormulaColor": {
+      "red": 0.937,
+      "green": 0.937,
+      "blue": 0.937
+    },
+    "formulaColumns": [
+      "H",
+      "J",
+      "L",
+      "M",
+      "P",
+      "Q",
+      "T",
+      "U",
+      "X",
+      "Y",
+      "Z"
+    ],
+    "sampleRowColor": {
+      "red": 0.988,
+      "green": 0.898,
+      "blue": 0.804
+    },
+    "headerBold": true,
+    "wrap": true,
+    "targetsFontSize": 9,
+    "columnWidths": {
+      "default": 100,
+      "R": 132,
+      "AA": 400
+    }
+  },
+  "changesFromSource": [
+    "Row 2 targets moved one column left so each sits under the column it describes; the CTR target has no column, so it sits in AA (Notes), and the 2X ROI note joins Z (ROAS).",
+    "Every calculated cell, including the sample rows, is a formula wrapped in IFERROR. The source had H3, H4 and L4 typed as numbers."
+  ],
+  "merges": [
+    "A2:B2"
+  ]
+}

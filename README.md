@@ -2,7 +2,7 @@
 
 Fills your weekly ad stat tracker for you. You give it two screenshots a week, one from Meta Ads Manager and one from your GoHighLevel funnel stats page. It pulls the rest from your own GoHighLevel account: opt-ins, applications, booked calls and attended calls, split per ad set. Then it writes the row into your Google Sheet with all the formulas filled in.
 
-> **Status: in development.** Nothing here is ready to install yet. This page will say when it is.
+> **Status: first test version (0.1.0), Claude Code only.** Install steps are in [`claude/`](claude/).
 
 ## Pick your folder
 

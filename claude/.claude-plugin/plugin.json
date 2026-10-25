@@ -1,0 +1,19 @@
+{
+  "name": "ghl-meta-ads-tracker",
+  "displayName": "GHL Meta Ads Stat Tracker",
+  "version": "0.1.0",
+  "description": "Fills your weekly Meta ads stat tracker in Google Sheets from your own GoHighLevel account plus two screenshots a week.",
+  "author": { "name": "GHL Meta Ads Stat Tracker" },
+  "homepage": "https://github.com/flseo2025/ghl-meta-ads-tracker",
+  "repository": "https://github.com/flseo2025/ghl-meta-ads-tracker",
+  "keywords": ["gohighlevel", "meta-ads", "google-sheets", "stat-tracker"],
+  "userConfig": {
+    "ghl_token": {
+      "type": "string",
+      "title": "GoHighLevel Private Integration token",
+      "description": "Starts with pit-. Create it in your GoHighLevel sub-account: Settings > Private Integrations. Step-by-step instructions are in the plugin README.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}
